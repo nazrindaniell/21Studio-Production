@@ -1,1 +1,11 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer components {
+  .primary-btn {
+    @apply bg-lime font-outfit text-black-100 flex rounded-full px-6 py-3 text-center text-lg font-normal lg:text-xl;
+  }
+  .secondary-btn {
+    @apply border-white-200 font-outfit text-white-200 rounded-full border bg-transparent px-6 py-3 text-center text-lg font-normal lg:text-xl;
+  }
+}
