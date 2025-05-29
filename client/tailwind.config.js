@@ -14,6 +14,14 @@ export default {
         outfit: ["Outfit", "sans-serif"],
         nunito: ["Nunito Sans", "sans-serif"],
       },
+      fontSize: {
+        h1: ["3rem", { lineHeight: "1.2" }],
+        h2: ["2.25rem", { lineHeight: "1.2" }],
+        h3: ["1.875rem", { lineHeight: "1.2" }],
+        h4: ["1.5rem", { lineHeight: "1.2" }],
+        lg: ["1.25rem", { lineHeight: "1.5" }],
+        base: ["1.125rem", { lineHeight: "1.5" }],
+      },
       container: {
         center: true,
         margin: {
