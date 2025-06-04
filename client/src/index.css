@@ -3,18 +3,9 @@
 
 @layer components {
   .primary-btn {
-    @reference bg-lime font-outfit text-black-100 flex rounded-full px-6 py-3 text-center text-base font-normal lg:text-lg;
+    @apply bg-lime font-outfit text-black-100 flex rounded-full px-6 py-3 text-center text-base font-normal lg:text-lg;
   }
   .secondary-btn {
-    @reference border-white-200 font-outfit text-white-200 rounded-full border bg-transparent px-6 py-3 text-center text-base font-normal lg:text-lg;
-  }
-
-  /* Custom Swiper Styles */
-  .swiper-pagination-custom .swiper-pagination-bullet {
-    @reference bg-black-100 bg-opacity-30 h-2 w-2 cursor-pointer rounded-full transition-all duration-300;
-  }
-
-  .swiper-pagination-custom .swiper-pagination-bullet-active {
-    @reference bg-lime bg-opacity-100 w-4;
+    @apply border-white-200 font-outfit text-white-200 rounded-full border bg-transparent px-6 py-3 text-center text-base font-normal lg:text-lg;
   }
 }

@@ -1,7 +1,7 @@
 function ServiceCard({ heading, desc, image, link }) {
   return (
     <>
-      <div className="group relative h-[550px] w-[600px] flex-none snap-center overflow-hidden rounded-3xl">
+      <div className="group relative h-[400px] w-[100%] flex-none snap-start overflow-hidden rounded-3xl lg:h-[550px] lg:w-[600px] lg:snap-center">
         {/* Background Image */}
         <img
           src={image}

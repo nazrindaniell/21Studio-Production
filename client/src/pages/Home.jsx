@@ -53,9 +53,9 @@ function Home() {
                 wedding, live show, or podcast session, we've got the talent,
                 tech, and tools to make it a hit.
               </p>
-            </div>
+            </div>{" "}
             {/* Carousel */}
-            <div className="scrollbar-hide flex w-screen snap-x snap-mandatory gap-x-6 overflow-x-scroll scroll-smooth px-5">
+            <div className="scrollbar-hide flex w-screen snap-x snap-mandatory gap-x-4 overflow-x-scroll scroll-smooth pr-[calc(100vw-100%)] lg:gap-x-4">
               <ServiceCard
                 heading="Studio Rental"
                 desc="Professionally treated acoustic spaces for recording, mixing, or rehearsals."
