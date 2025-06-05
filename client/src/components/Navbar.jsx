@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="absolute left-1/2 z-40 w-full -translate-x-1/2 transform bg-transparent py-4">
+      <nav className="absolute left-1/2 z-40 w-full -translate-x-1/2 transform bg-transparent py-6">
         <div className="container mx-auto flex items-center justify-between">
           <Link exact="true" to="/">
             <img
