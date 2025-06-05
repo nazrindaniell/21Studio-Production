@@ -8,4 +8,75 @@
   .secondary-btn {
     @apply border-white-200 font-outfit text-white-200 rounded-full border bg-transparent px-6 py-3 text-center text-base font-normal lg:text-lg;
   }
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+}
+
+/**
+ * Custom Swiper styles
+ * These styles override the default Swiper styles to match our design system
+ */
+
+/* Navigation arrows */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px !important;
+  color: #0e110c !important;
+  font-weight: bold;
+}
+
+/* Pagination container */
+.swiper-pagination {
+  position: relative !important;
+  bottom: 0 !important;
+  text-align: left !important;
+}
+
+/* Pagination bullets default state */
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  background-color: #cccccc !important;
+  opacity: 1 !important;
+  transition:
+    width 0.3s ease,
+    background-color 0.3s ease !important;
+}
+
+/* Pagination bullets active state */
+.swiper-pagination-bullet-active {
+  width: 24px !important;
+  border-radius: 4px !important;
+  background-color: #0e110c !important;
+}
+
+/**
+ * Swiper overflow handling
+ * These styles allow the swiper slides to overflow the container while preventing
+ * horizontal scrollbars on the page
+ */
+.swiper.overflow-visible {
+  overflow: visible;
+  /* margin: 0 -2rem; */
+  /* Match the container padding from tailwind config */
+  /* width: calc(100% + 4rem); */
+  /* Compensate for the negative margin */
+}
+
+/* Swiper slide styles */
+.swiper-slide {
+  height: auto; /* Make slides take natural height */
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease; /* Smooth transitions */
+}
+
+/* Prevent body horizontal scroll while allowing swiper overflow */
+body {
+  overflow-x: hidden;
 }
