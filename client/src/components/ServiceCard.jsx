@@ -10,7 +10,7 @@
  */
 function ServiceCard({ heading, desc, image, link }) {
   return (
-    <div className="group relative h-[400px] w-full overflow-hidden rounded-3xl shadow-lg lg:h-[500px]">
+    <div className="group relative h-[400px] w-full overflow-hidden rounded-3xl shadow-lg lg:h-[550px]">
       {/* Background Image with hover effect */}
       <img
         src={image}

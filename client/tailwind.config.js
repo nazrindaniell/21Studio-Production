@@ -5,6 +5,8 @@ export default {
     extend: {
       colors: {
         "black-100": "#0E110C", // Black
+        "black-200": "#6C6C6C", // Light black
+        "white-100": "#FFFFFF",
         "white-200": "#EAF0F5", // Light gray
         "white-300": "#CCCCCC", // Gray
         lime: "#CFFA14", // Lime
