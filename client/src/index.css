@@ -8,6 +8,10 @@
   .secondary-btn {
     @apply border-white-200 font-outfit text-white-200 rounded-full border bg-transparent px-5 py-2.5 text-center text-base font-medium lg:px-6 lg:py-3 lg:text-lg;
   }
+  /* Custom utility for white-400 since it's having issues */
+  .bg-white-400-custom {
+    background-color: #d9d9d9;
+  }
   .scrollbar-hide {
     -ms-overflow-style: none; /* Internet Explorer and Edge */
     scrollbar-width: none; /* Firefox */
