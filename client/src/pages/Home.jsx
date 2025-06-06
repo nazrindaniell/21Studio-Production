@@ -35,7 +35,7 @@ function HeroSection() {
               <h1 className="font-outfit text-white-200 text-h1 font-medium lg:text-7xl xl:text-8xl">
                 Where Sound Meets Story
               </h1>
-              <p className="font-nunito text-white-300 text-base font-normal lg:text-lg">
+              <p className="font-nunito text-white-200 text-base font-normal lg:text-lg">
                 Studio spaces, sound systems, live bands, and hosting —
                 everything you need to create unforgettable experiences.
               </p>
