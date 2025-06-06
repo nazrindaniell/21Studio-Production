@@ -9,6 +9,7 @@ export default {
         "white-100": "#FFFFFF",
         "white-200": "#EAF0F5", // Light gray
         "white-300": "#CCCCCC", // Gray
+        "white-400": "#D9D9D9", // Dark gray
         lime: "#CFFA14", // Lime
         purple: "#4131D3", // Purple
       },

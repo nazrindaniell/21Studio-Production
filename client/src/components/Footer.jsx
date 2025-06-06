@@ -1,4 +1,8 @@
 import TwstLogo from "../assets/twst-logo-black.webp";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -50,10 +54,34 @@ function Footer() {
                 <h3 className="font-outfit text-h4 text-black-100 lg:text-h3 font-medium">
                   Social
                 </h3>
-                <div className="[&>p]:text-black-100 flex flex-col gap-2 [&>p]:text-base lg:[&>p]:text-lg">
-                  <p>Instagram</p>
-                  <p>Facebook</p>
-                  <p>Youtube</p>
+                <div className="[&>p]:text-black-100 flex gap-3 [&>p]:text-base lg:[&>p]:text-lg">
+                  <a href="#">
+                    <div className="bg-white-400 relative h-12 w-12 rounded-full">
+                      <FontAwesomeIcon
+                        icon={faInstagram}
+                        size="xl"
+                        className="text-black-100 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                      />
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div className="bg-white-400 relative h-12 w-12 rounded-full">
+                      <FontAwesomeIcon
+                        icon={faFacebookF}
+                        size="xl"
+                        className="text-black-100 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                      />
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div className="bg-white-400 relative h-12 w-12 rounded-full">
+                      <FontAwesomeIcon
+                        icon={faYoutube}
+                        size="xl"
+                        className="text-black-100 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                      />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
