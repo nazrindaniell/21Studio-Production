@@ -1,10 +1,10 @@
-import { Navigation, Pagination, A11y } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import ServiceCard from "./ServiceCard";
-import services from "../data/services";
+import { Navigation, Pagination, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import ServiceCard from './ServiceCard';
+import services from '../data/services';
 
 /**
  * ServiceCarousel component that displays services in a responsive Swiper carousel
@@ -23,12 +23,12 @@ function ServiceCarousel() {
     spaceBetween: 20,
     slidesPerView: 1,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     pagination: {
       clickable: true,
-      el: ".swiper-pagination",
+      el: '.swiper-pagination',
     },
     breakpoints: {
       640: { slidesPerView: 1.5, spaceBetween: 20 },

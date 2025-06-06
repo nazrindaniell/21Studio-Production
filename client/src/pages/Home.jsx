@@ -1,9 +1,9 @@
-import HomeBg from "../assets/home-background.webp";
-import ServiceCarousel from "../components/ServiceCarousel";
-import TestimonialImg from "../assets/testimonial-img.webp";
-import GalleryImg from "../assets/gallery-img.webp";
-import GalleryImg2 from "../assets/gallery-img2.webp";
-import GalleryImg3 from "../assets/gallery-img3.webp";
+import HomeBg from '../assets/home-background.webp';
+import ServiceCarousel from '../components/ServiceCarousel';
+import TestimonialImg from '../assets/testimonial-img.webp';
+import GalleryImg from '../assets/gallery-img.webp';
+import GalleryImg2 from '../assets/gallery-img2.webp';
+import GalleryImg3 from '../assets/gallery-img3.webp';
 /**
  * Home page component for 21Studio Production website
  * Contains hero section and service section
@@ -23,11 +23,7 @@ function Home() {
 function HeroSection() {
   return (
     <div className="relative">
-      <img
-        src={HomeBg}
-        alt="Home background"
-        className="h-svh w-full object-cover object-center"
-      />
+      <img src={HomeBg} alt="Home background" className="h-svh w-full object-cover object-center" />
       <section className="absolute top-1/2 left-1/2 z-30 container mx-auto flex -translate-1/2 transform">
         <div className="flex w-full items-start justify-center lg:w-1/2">
           <div className="flex flex-col items-start justify-center gap-10 lg:gap-12">
@@ -36,8 +32,8 @@ function HeroSection() {
                 Where Sound Meets Story
               </h1>
               <p className="font-nunito text-white-200 text-base font-normal lg:text-lg">
-                Studio spaces, sound systems, live bands, and hosting —
-                everything you need to create unforgettable experiences.
+                Studio spaces, sound systems, live bands, and hosting — everything you need to
+                create unforgettable experiences.
               </p>
             </div>
             <div className="flex flex-col gap-4 justify-self-auto lg:flex-row">
@@ -66,10 +62,9 @@ function ServicesSection() {
               Your Vision, Our Expertise
             </h2>
             <p className="font-monito text-black-200 w-full text-center text-base font-medium lg:w-[80%] lg:text-lg">
-              At 21Studio Production, we offer more than just equipment — we
-              deliver unforgettable experiences. Whether it's corporate gig,
-              wedding, live show, or podcast session, we've got the talent,
-              tech, and tools to make it a hit.
+              At 21Studio Production, we offer more than just equipment — we deliver unforgettable
+              experiences. Whether it's corporate gig, wedding, live show, or podcast session, we've
+              got the talent, tech, and tools to make it a hit.
             </p>
           </div>
         </div>
@@ -98,8 +93,8 @@ function TestimonialSection() {
             <div className="flex flex-col gap-2">
               <p className="font-nunito text-base lg:text-lg">CUSTOMER STORY</p>
               <h3 className="font-nunito text-h4 lg:text-h3 text-black-100 font-semibold italic">
-                "The best event partner we've ever worked with — they understood
-                exactly what we needed and exceeded our expectations."
+                "The best event partner we've ever worked with — they understood exactly what we
+                needed and exceeded our expectations."
               </h3>
             </div>
             {/* button wrapper */}
@@ -124,8 +119,8 @@ function GallerySection() {
             Moments That Made The Stage
           </h2>
           <p className="font-nunito text-black-200 text-center text-base lg:text-lg">
-            A look back at the performances, setups, and memories we've helped
-            created — one event at a time
+            A look back at the performances, setups, and memories we've helped created — one event
+            at a time
           </p>
         </div>
         {/* Gallery content */}
@@ -166,9 +161,7 @@ function BookingStepSection() {
                 01
               </span>
               <div className="flex flex-col gap-2">
-                <h3 className="font-outfit text-h4 lg:text-h3 text-white-200">
-                  Sign Up or Log in
-                </h3>
+                <h3 className="font-outfit text-h4 lg:text-h3 text-white-200">Sign Up or Log in</h3>
                 <p className="text-white-300 font-nunito text-base lg:text-lg">
                   Create an account to unlock booking form.
                 </p>
@@ -199,12 +192,9 @@ function BookingStepSection() {
               03
             </span>
             <div className="flex flex-col gap-2">
-              <h3 className="font-outfit text-h4 lg:text-h3 text-white-200">
-                Get a Quotation
-              </h3>
+              <h3 className="font-outfit text-h4 lg:text-h3 text-white-200">Get a Quotation</h3>
               <p className="text-white-300 font-nunito text-base lg:text-lg">
-                Our team will review your request and send you a custom quote
-                via email.
+                Our team will review your request and send you a custom quote via email.
               </p>
             </div>
           </div>
@@ -216,9 +206,7 @@ function BookingStepSection() {
               04
             </span>
             <div className="flex flex-col gap-2">
-              <h3 className="font-outfit text-h4 lg:text-h3 text-white-200">
-                Finalize & Perform
-              </h3>
+              <h3 className="font-outfit text-h4 lg:text-h3 text-white-200">Finalize & Perform</h3>
               <p className="text-white-300 font-nunito text-base lg:text-lg">
                 Approve the quote and let us handle the magic behind the scenes.
               </p>
