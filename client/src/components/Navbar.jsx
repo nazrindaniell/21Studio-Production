@@ -23,30 +23,33 @@ function Navbar() {
             />
           </Link>
 
-          <div className="text-white-300 font-nunito hidden justify-between gap-10 font-normal lg:flex [&_*]:text-lg">
+          <div className="text-white-300 font-nunito hidden justify-between gap-10 text-base font-normal lg:flex [&_*]:text-lg lg:[&_*]:text-lg">
             <Link to="#">Home</Link>
             <Link to="#">About us</Link>
             <Link to="#">Services</Link>
             <Link to="#">Gallery</Link>
             <Link to="#">Contact us</Link>
           </div>
-          <div className="primary-btn hidden lg:block">
-            <Link to="#" className="text-lg">
-              Sign Up
-            </Link>
-          </div>
-          <div className="lg:hidden">
-            <button onClick={toggleMenu} className="cursor-pointer">
-              <FontAwesomeIcon
-                icon={isOpen ? faTimes : faBars}
-                size="lg"
-                color="white"
-              />
-            </button>
+
+          <div className="flex items-center gap-5">
+            <div className="primary-btn justify-content-end flex items-start">
+              <Link to="#">Sign Up</Link>
+            </div>
+
+            <div className="lg:hidden">
+              <button onClick={toggleMenu} className="cursor-pointer">
+                <FontAwesomeIcon
+                  icon={isOpen ? faTimes : faBars}
+                  size="xl"
+                  color="white"
+                />
+              </button>
+            </div>
           </div>
         </div>
+
         {isOpen && (
-          <div className="fixed z-50 mt-4 flex w-full flex-col items-center gap-4 bg-white p-4 shadow lg:hidden">
+          <div className="text-white-200 bg-black-100 [&>a]:text-white-200 [&>a]:border-white-300 fixed z-50 mt-6 flex w-full flex-col items-center p-6 text-base font-medium shadow lg:hidden [&>a]:w-full [&>a]:border-b [&>a]:py-4">
             <Link to="#" onClick={toggleMenu}>
               Home
             </Link>
@@ -59,9 +62,9 @@ function Navbar() {
             <Link to="#" onClick={toggleMenu}>
               Contact us
             </Link>
-            <Link to="#" className="primary-btn" onClick={toggleMenu}>
+            {/* <Link to="#" className="primary-btn" onClick={toggleMenu}>
               Sign up
-            </Link>
+            </Link> */}
           </div>
         )}
       </nav>
