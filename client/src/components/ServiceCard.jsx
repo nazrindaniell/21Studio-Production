@@ -29,7 +29,9 @@ function ServiceCard({ heading, desc, image, link }) {
             <h3 className="text-h3 font-outfit text-white-200 font-bold drop-shadow-md">
               {heading}
             </h3>
-            <p className="text-body font-nunito text-white-300 lg:text-lg">{desc}</p>
+            <p className="text-body font-nunito text-white-300 lg:text-lg">
+              {desc}
+            </p>
           </div>
 
           {/* Call-to-action link */}

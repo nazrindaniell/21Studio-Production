@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ServicePillars from "../components/ServicePillars";
 import TeamProfile from "../components/TeamProfile";
+import BannerImg from "../assets/banner-promote.webp";
 
 function About() {
   return (
@@ -8,7 +9,7 @@ function About() {
       <HeroSection />
       <CompanyBackground />
       <TeamMembers />
-      <s></s>
+      <BannerPromote />
     </>
   );
 }
@@ -40,7 +41,7 @@ function HeroSection() {
               </div>
             </div>
             {/* ServicePillars section*/}
-            <div className="mx-auto grid grid-cols-1 gap-4 lg:w-4/5 lg:grid-cols-3 lg:place-items-center">
+            <div className="mx-auto grid grid-cols-1 gap-6 lg:w-4/5 lg:grid-cols-3 lg:place-items-center">
               <ServicePillars />
             </div>
           </div>
@@ -55,11 +56,13 @@ function CompanyBackground() {
     <div className="bg-black-100">
       <div className="py-20 lg:pt-0 lg:pb-20">
         <section className="container mx-auto">
-          <div className="flex flex-col gap-20">
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-              <h2 className="text-h2 font-outfit text-white-200 text-left font-medium uppercase lg:text-5xl">
-                Our Story
-              </h2>
+          <div className="flex flex-col gap-16">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+              <div>
+                <h2 className="border-white-200 lg:afer:content-[''] text-h2 font-outfit text-white-200 relative text-left font-medium uppercase lg:text-5xl lg:after:absolute lg:after:bottom-[-1rem] lg:after:left-0 lg:after:w-[20%] lg:after:border-b">
+                  Our Story
+                </h2>
+              </div>
               <div className="[&>p]:font-nunito [&>p]:text-white-300 flex flex-col gap-4 [&>p]:text-base lg:[&>p]:text-lg">
                 <p>
                   At 21Studio Production, our journey began with a shared love
@@ -85,10 +88,12 @@ function CompanyBackground() {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-              <h2 className="text-h2 font-outfit text-white-200 text-left font-medium uppercase lg:text-5xl">
-                Our Mission
-              </h2>
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+              <div>
+                <h2 className="border-white-200 lg:afer:content-[''] text-h2 font-outfit text-white-200 relative text-left font-medium uppercase lg:text-5xl lg:after:absolute lg:after:bottom-[-1rem] lg:after:left-0 lg:after:w-[20%] lg:after:border-b">
+                  Our Mission
+                </h2>
+              </div>
               <p className="font-nunito text-white-300 text-base lg:text-lg">
                 To empower creators, performers, and event organizers by
                 delivering seamless, high-quality production services that
@@ -119,6 +124,34 @@ function TeamMembers() {
           </div>
         </section>
       </div>
+    </div>
+  );
+}
+
+function BannerPromote() {
+  return (
+    <div
+      className="bg-opacity-20 bg-fill relative bg-cover bg-center"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${BannerImg})`,
+      }}
+    >
+      <section className="container mx-auto py-25 lg:py-50">
+        <div className="flex flex-col items-start gap-10">
+          <div className="flex flex-col gap-4 lg:w-2/3">
+            <h1 className="font-outfit text-h1 text-white-200 font-medium lg:text-7xl">
+              Let's Create Something's Unforgettable
+            </h1>
+            <p className="font-nunito text-white-400 text-base lg:w-3/4 lg:text-lg">
+              Whether you're planning a performance or producing a podcast,
+              we're here to make it exceptional.
+            </p>
+          </div>
+          <Link to="#" className="primary-btn">
+            Contact us
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

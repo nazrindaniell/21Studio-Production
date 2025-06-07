@@ -28,7 +28,7 @@ function HeroSection() {
         alt="Home background"
         className="h-svh w-full object-cover object-center"
       />
-      <section className="absolute top-1/2 left-1/2 z-30 container mx-auto flex -translate-1/2 transform">
+      <section className="absolute top-1/2 left-1/2 z-30 container mx-auto -translate-1/2 transform">
         <div className="flex w-full items-start justify-center lg:w-1/2">
           <div className="flex flex-col items-start justify-center gap-10 lg:gap-12">
             <div className="flex flex-col gap-4">
