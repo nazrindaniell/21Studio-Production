@@ -1,11 +1,25 @@
-import { Link } from 'react-router-dom';
-import TwstLogo from '../assets/twst-logo-black.webp';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
-import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import {
+  faFacebookF,
+  faInstagram,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link, useLocation } from "react-router-dom";
+import TwstLogo from "../assets/twst-logo-black.webp";
+import scrollToTop from "../utils/scrollToTop";
 
 function Footer() {
+  const location = useLocation();
+
+  // Function to handle clicks on the current page link
+  const handleLinkClick = (path, e) => {
+    // If we're already on this path, scroll to top instead of doing nothing
+    if (location.pathname === path) {
+      e.preventDefault(); // Prevent default link behavior
+      scrollToTop(); // Scroll to top
+    }
+  };
+
   return (
     <>
       <footer className="bg-white-200 py-10 lg:pt-20 lg:pb-10">
@@ -17,8 +31,8 @@ function Footer() {
                   Ready to create something unforgettable?
                 </h2>
                 <p className="font-nunito text-white-200 text-base lg:text-lg">
-                  Tell us what you need, and we'll handle the rest. From setup to soundcheck — we've
-                  got you.
+                  Tell us what you need, and we'll handle the rest. From setup
+                  to soundcheck — we've got you.
                 </p>
               </div>
               <div className="flex justify-start">
@@ -40,13 +54,37 @@ function Footer() {
             {/* center column */}
             <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-4">
-                <h3 className="font-outfit text-h4 text-black-100 lg:text-h3 font-medium">Links</h3>
+                <h3 className="font-outfit text-h4 text-black-100 lg:text-h3 font-medium">
+                  Links
+                </h3>{" "}
                 <div className="[&>a]:text-black-100 flex flex-col gap-2 [&>a]:text-base lg:[&>a]:text-lg">
-                  <Link to="/">Home</Link>
-                  <Link to="/about">About us</Link>
-                  <Link to="#">Services</Link>
-                  <Link to="#">Gallery</Link>
-                  <Link to="#">Contact us</Link>
+                  <Link to="/" onClick={(e) => handleLinkClick("/", e)}>
+                    Home
+                  </Link>
+                  <Link
+                    to="/about"
+                    onClick={(e) => handleLinkClick("/about", e)}
+                  >
+                    About us
+                  </Link>
+                  <Link
+                    to="/services"
+                    onClick={(e) => handleLinkClick("/services", e)}
+                  >
+                    Services
+                  </Link>
+                  <Link
+                    to="/gallery"
+                    onClick={(e) => handleLinkClick("/gallery", e)}
+                  >
+                    Gallery
+                  </Link>
+                  <Link
+                    to="/contact"
+                    onClick={(e) => handleLinkClick("/contact", e)}
+                  >
+                    Contact us
+                  </Link>
                 </div>
               </div>
               <div className="flex flex-col gap-4">
@@ -112,7 +150,8 @@ function Footer() {
           </div>
           {/* copyright section */}
           <p className="text-black-100 font-nunito mt-5 text-center text-base lg:text-lg">
-            © {new Date().getFullYear()} 21Studio Production. All rights reserved.
+            © {new Date().getFullYear()} 21Studio Production. All rights
+            reserved.
           </p>
         </div>
       </footer>

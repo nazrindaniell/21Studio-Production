@@ -1,6 +1,6 @@
-import StudioRentalImg from '../assets/studio-rental.webp';
-import SoundSystemImg from '../assets/sound-system.webp';
 import LiveBandImg from '../assets/live-bands.webp';
+import SoundSystemImg from '../assets/sound-system.webp';
+import StudioRentalImg from '../assets/studio-rental.webp';
 
 /**
  * Services data for 21Studio Production
@@ -32,14 +32,14 @@ const services = [
     id: 'event-hosting',
     heading: 'Event Hosting',
     desc: 'Professional hosts and MCs who keep your event flowing smoothly and your audience engaged.',
-    image: StudioRentalImg, // Temporarily using the same image as Live Bands
+    image: StudioRentalImg,
     link: '#event-hosting',
   },
   {
     id: 'custom-services',
     heading: 'Custom Services',
     desc: "Tailored solutions for your unique audio-visual needs. Let's create something special together.",
-    image: SoundSystemImg, // Temporarily using the same image as Sound System Rental
+    image: SoundSystemImg,
     link: '#custom-services',
   },
 ];

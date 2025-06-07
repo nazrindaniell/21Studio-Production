@@ -15,7 +15,7 @@ function ServiceCard({ heading, desc, image, link }) {
       <img
         src={image}
         alt={heading}
-        className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+        className="wrapper h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
       />
 
       {/* Dark Overlay with gradient */}
