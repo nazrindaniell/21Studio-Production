@@ -1,10 +1,10 @@
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { A11y, Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import services from '../data/services';
-import ServiceCard from './ServiceCard';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { A11y, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import services from "../data/services";
+import ServiceCard from "./ServiceCard";
 
 /**
  * ServiceCarousel component that displays services in a responsive Swiper carousel
@@ -23,12 +23,12 @@ function ServiceCarousel() {
     spaceBetween: 20,
     slidesPerView: 1,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     pagination: {
       clickable: true,
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
     },
     breakpoints: {
       640: { slidesPerView: 1.5, spaceBetween: 20 },
@@ -46,7 +46,7 @@ function ServiceCarousel() {
         <div className="relative overflow-visible">
           <Swiper {...swiperConfig} className="overflow-visible">
             {/* Map through services to create slides */}
-            {services.map(service => (
+            {services.map((service) => (
               <SwiperSlide key={service.id}>
                 <ServiceCard
                   heading={service.heading}

@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @config "../tailwind.config.js";
 
 @layer components {
@@ -17,11 +17,7 @@
   }
 }
 
-/**
- * Custom Swiper styles
- * These styles override the default Swiper styles to match our design system
- */
-
+/* CUSTOM SWIPER STYLES */
 /* Navigation arrows */
 .swiper-button-next::after,
 .swiper-button-prev::after {
@@ -55,25 +51,17 @@
   background-color: #0e110c !important;
 }
 
-/**
- * Swiper overflow handling
- * These styles allow the swiper slides to overflow the container while preventing
- * horizontal scrollbars on the page
- */
+/* SWIPER OVERFLOW HANDLING */
 .swiper.overflow-visible {
   overflow: visible;
-  /* margin: 0 -2rem; */
-  /* Match the container padding from tailwind config */
-  /* width: calc(100% + 4rem); */
-  /* Compensate for the negative margin */
 }
 
 /* Swiper slide styles */
 .swiper-slide {
-  height: auto; /* Make slides take natural height */
+  height: auto;
   transition:
     transform 0.3s ease,
-    opacity 0.3s ease; /* Smooth transitions */
+    opacity 0.3s ease;
 }
 
 /* Prevent body horizontal scroll while allowing swiper overflow */
