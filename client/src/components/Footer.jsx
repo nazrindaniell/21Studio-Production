@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import TwstLogo from "../assets/twst-logo-black.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -21,9 +22,9 @@ function Footer() {
                 </p>
               </div>
               <div className="flex justify-start">
-                <a href="#" className="primary-btn">
+                <Link to="#" className="primary-btn">
                   Register now
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -42,12 +43,12 @@ function Footer() {
                 <h3 className="font-outfit text-h4 text-black-100 lg:text-h3 font-medium">
                   Links
                 </h3>
-                <div className="[&>a]:text-black-100 flex flex-col gap-2 [&>a]:text-base lg:[&>a]:text-lg">
-                  <a href="#">Home</a>
-                  <a href="#">About us</a>
-                  <a href="#">Services</a>
-                  <a href="#">Gallery</a>
-                  <a href="#">Contact us</a>
+                <div className="[&>a]:text-black-100 [&>a]:font-nunito flex flex-col gap-2 [&>a]:text-base lg:[&>a]:text-lg">
+                  <Link to="/">Home</Link>
+                  <Link to="/about">About us</Link>
+                  <Link to="#">Services</Link>
+                  <Link to="#">Gallery</Link>
+                  <Link to="#">Contact us</Link>
                 </div>
               </div>
               <div className="flex flex-col gap-4">
@@ -91,7 +92,7 @@ function Footer() {
                 <h3 className="font-outfit text-h4 text-black-100 lg:text-h3 font-medium">
                   Contact us
                 </h3>
-                <div className="[&>p]:text-black-100 flex flex-col gap-2 [&>p]:text-base lg:[&>p]:text-lg">
+                <div className="[&>p]:text-black-100 [&>p]:font-nunito flex flex-col gap-2 [&>p]:text-base lg:[&>p]:text-lg">
                   <p>+012-3456789</p>
                   <p>21studioproduction@gmail.com</p>
                 </div>
