@@ -16,7 +16,7 @@ function Footer() {
     // If we're already on this path, scroll to top instead of doing nothing
     if (location.pathname === path) {
       e.preventDefault(); // Prevent default link behavior
-      scrollToTop(); // Scroll to top
+      scrollToTop();
     }
   };
 
@@ -56,8 +56,8 @@ function Footer() {
               <div className="flex flex-col gap-4">
                 <h3 className="font-outfit text-h4 text-black-100 lg:text-h3 font-medium">
                   Links
-                </h3>{" "}
-                <div className="[&>a]:text-black-100 flex flex-col gap-2 [&>a]:text-base lg:[&>a]:text-lg">
+                </h3>
+                <div className="[&>a]:text-black-100 [&>a]:font-nunito flex flex-col gap-2 [&>a]:text-base lg:[&>a]:text-lg">
                   <Link to="/" onClick={(e) => handleLinkClick("/", e)}>
                     Home
                   </Link>
@@ -128,7 +128,7 @@ function Footer() {
                 <h3 className="font-outfit text-h4 text-black-100 lg:text-h3 font-medium">
                   Contact us
                 </h3>
-                <div className="[&>p]:text-black-100 flex flex-col gap-2 [&>p]:text-base lg:[&>p]:text-lg">
+                <div className="[&>p]:text-black-100 [&>p]:font-nunito flex flex-col gap-2 [&>p]:text-base lg:[&>p]:text-lg">
                   <p>+012-3456789</p>
                   <p>21studioproduction@gmail.com</p>
                 </div>
